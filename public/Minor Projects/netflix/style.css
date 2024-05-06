@@ -1,0 +1,75 @@
+body{
+    background-color: #564d4d;
+}
+
+.subscription-card {
+    border: 1px solid #ccc;
+    background-color: #e3343d;
+    border-radius: 25px;
+    padding: 20px;
+    text-align: center;
+    margin: 50px auto;   
+    
+}
+
+.subscription-card:hover{
+    background-color: #E50914;
+}
+
+.subscription-card h3 {
+    font-weight: bold;
+    color: #ccc;
+    font-size: 24px;
+}
+
+.subscription-card p {
+    font-size: 16px;
+}
+
+.box{
+    margin: 10px;
+}
+
+.recommended-badge {
+    background-color: #ffc107; 
+    color: #333; 
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#subscribe-button{
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.subscribe-button:hover,
+.subscribe-button:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+.button-24:active {
+  opacity: .5;
+}

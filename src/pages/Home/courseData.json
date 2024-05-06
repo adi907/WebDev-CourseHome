@@ -1,0 +1,439 @@
+[
+  [
+    {
+      "link": "tut5.html",
+      "subject":"HTML",
+      "title": "5. Heading,Paragraphs & Emmet"
+    },
+    {
+      "link": "tut6.html",
+      "subject":"HTML",
+      "title": "6. Links & Images"
+    },
+    {
+      "link": "tut7.html",
+      "subject":"HTML",
+      "title": "7. Tables & Lists"
+    },
+    {
+      "link": "tut8.html",
+      "subject":"HTML",
+      "title": "8. Forms"
+    },
+    {
+      "link": "tut9.html",
+      "subject":"HTML",
+      "title": "9. Inline & Block Elements"
+    },
+    {
+      "link": "tut10.html",
+      "subject":"HTML",
+      "title": "10. Id's & Classes in HTML"
+    },
+    {
+      "link": "tut11.html",
+      "subject":"HTML",
+      "title": "11. HTML Entities"
+    },
+    {
+      "link": "tut12.html",
+      "subject":"HTML",
+      "title": "12. HTML Semantic Tags"
+    }
+  ],
+  [
+    {
+      "link": "tut14.html",
+      "subject":"CSS",
+      "title": "14. CSS Tutorial"
+    },
+    {
+      "link": "tut15.html",
+      "subject":"CSS",
+      "title": "15. CSS Selectors"
+    },
+    {
+      "link": "tut16.html",
+      "subject":"CSS",
+      "title": "16. Developer Tools"
+    },
+    {
+      "link": "tut17.html",
+      "subject":"CSS",
+      "title": "17. CSS Fonts"
+    },
+    {
+      "link": "tut18.html",
+      "subject":"CSS",
+      "title": "18. Colors in CSS"
+    },
+    {
+      "link": "tut19.html",
+      "subject":"CSS",
+      "title": "19. Height, Width, Borders & Backgrounds"
+    },
+    {
+      "link": "tut20.html",
+      "subject":"CSS",
+      "title": "20. CSS Box Model,Margin & Padding"
+    },
+    {
+      "link": "tut21.html",
+      "subject":"CSS",
+      "title": "21. Alignment, Float & Clear"
+    },
+    {
+      "link": "tut22.html",
+      "subject":"CSS",
+      "title": "22. Pseudo-Selectors & more designing"
+    },
+    {
+      "link": "tut23.html",
+      "subject":"CSS",
+      "title": "23. Navigation Bar"
+    },
+    {
+      "link": "tut24.html",
+      "subject":"CSS",
+      "title": "24. CSS Display"
+    },
+    {
+      "link": "tut25.html",
+      "subject":"CSS",
+      "title": "25. CSS Positioning"
+    },
+    {
+      "link": "tut27.html",
+      "subject":"CSS",
+      "title": "27. Visibility & z-index"
+    },
+    {
+      "link": "tut28.html",
+      "subject":"CSS",
+      "title": "28. Flexbox"
+    },
+    {
+      "link": "tut29.html",
+      "subject":"CSS",
+      "title": "29. Size units"
+    },
+    {
+      "link": "tut30.html",
+      "subject":"CSS",
+      "title": "30. Media Queries"
+    },
+    {
+      "link": "tut31.html",
+      "subject":"CSS",
+      "title": "31. More on Selectors"
+    },
+    {
+      "link": "tut32.html",
+      "subject":"CSS",
+      "title": "32. Attribute & nth child pseudo-selectors"
+    },
+    {
+      "link": "tut33.html",
+      "subject":"CSS",
+      "title": "33. Before and After Pseudo-selector"
+    },
+    {
+      "link": "tut34.html",
+      "subject":"CSS",
+      "title": "34. Box shadow & Text shadow"
+    },
+    {
+      "link": "tut35.html",
+      "subject":"CSS",
+      "title": "35. CSS Variables & Custom Properties"
+    },
+    {
+      "link": "tut36.html",
+      "subject":"CSS",
+      "title": "36. Keyframes & Animations"
+    },
+    {
+      "link": "tut37.html",
+      "subject":"CSS",
+      "title": "37. CSS Transitions"
+    },
+    {
+      "link": "tut38.html",
+      "subject":"CSS",
+      "title": "38. CSS Transform"
+    },
+    {
+      "link": "tut40.html",
+      "subject":"CSS",
+      "title": "40. CSS Grid"
+    },
+    {
+      "link": "tut41.html",
+      "subject":"CSS",
+      "title": "41. Creating Rows & Gaps in Grid"
+    },
+    {
+      "link": "tut42.html",
+      "subject":"CSS",
+      "title": "42. Spanning Multiple Rows & Columns in Grid"
+    },
+    {
+      "link": "tut43.html",
+      "subject":"CSS",
+      "title": "43. Autofit & MinMax"
+    },
+    {
+      "link": "tut44.html",
+      "subject":"CSS",
+      "title": "44. Template Area"
+    },
+    {
+      "link": "tut45.html",
+      "subject":"CSS",
+      "title": "45. Using Media Queries with CSS Grid"
+    },
+    {
+      "link": "tut46.html",
+      "subject":"CSS",
+      "title": "Advanced CSS(Kevin Powel): Hover"
+    },
+    {
+      "link": "Adv-hover-Animations.html",
+      "subject":"CSS",
+      "title": "Advanced CSS(Web Dev Simplified): Hover Animations"
+    }
+  ],
+  [
+    {
+      "link": "tut47.html",
+      "subject":"JS",
+      "title": "47. JavaScript Tutorial"
+    },
+    {
+      "link": "tut48.html",
+      "subject":"JS",
+      "title": "48. Variables, Data types & Operators in JavaScript"
+    },
+    {
+      "link": "tut49.html",
+      "subject":"JS",
+      "title": "49. Strings in JavaScript"
+    },
+    {
+      "link": "tut50.html",
+      "subject":"JS",
+      "title": "50. String functions in JavaScript"
+    },
+    {
+      "link": "tut51.html",
+      "subject":"JS",
+      "title": "51. Scope, If-else Conditionals & Switch Case in JavaScript"
+    },
+    {
+      "link": "tut52.html",
+      "subject":"JS",
+      "title": "52. Arrays & Objects"
+    },
+    {
+      "link": "tut53.html",
+      "subject":"JS",
+      "title": "53. Functions"
+    },
+    {
+      "link": "tut54.html",
+      "subject":"JS",
+      "title": "54. Interaction using Alert, Prompt, Confirm"
+    },
+    {
+      "link": "tut55.html",
+      "subject":"JS",
+      "title": "55. Loops: for, while, forEach, Do While"
+    },
+    {
+      "link": "tut56.html",
+      "subject":"JS",
+      "title": "56. Manipulating DOM"
+    },
+    {
+      "link": "tut57.html",
+      "subject":"JS",
+      "title": "57. JavaScript Events"
+    },
+    {
+      "link": "tut58.html",
+      "subject":"JS",
+      "title": "58. SetTimeOut & SetInterval"
+    },
+    {
+      "link": "tut59.html",
+      "subject":"JS",
+      "title": "59. Date & Time"
+    },
+    {
+      "link": "tut60.html",
+      "subject":"JS",
+      "title": "60. Arrow Functions"
+    },
+    {
+      "link": "tut61.html",
+      "subject":"JS",
+      "title": "61. Math Object"
+    },
+    {
+      "link": "tut62.html",
+      "subject":"JS",
+      "title": "62. Working with JSON"
+    }
+  ],
+  [
+    {
+      "link": "tut63.js",
+      "subject":"NodeJS",
+      "title": "63. Node.Js Introduction"
+    },
+    {
+      "link": "tut64.js",
+      "subject":"NodeJS",
+      "title": "64. Node.Js Modules"
+    },
+    {
+      "link": "tut65.js",
+      "subject":"NodeJS",
+      "title": "65. Blocking vs Non-Blocking execution"
+    },
+    {
+      "link": "tut66.js",
+      "subject":"NodeJS",
+      "title": "66. Serving HTML Files using NodeJs"
+    },
+    {
+      "link": "NodeJS/tut67/index.js",
+      "subject":"NodeJS",
+      "title": "67. Creating a Custom Backend Using NodeJs"
+    },
+    {
+      "link": "NodeJS/tut68/index.js",
+      "subject":"NodeJS",
+      "title": "68. Creating Custom Modules in Node using NodeJs"
+    },
+    {
+      "link": "NodeJS/tut69/tut69.js",
+      "subject":"NodeJS",
+      "title": "69. npm:Node Package Manager"
+    },
+    {
+      "link": "NodeJS/Express/app.js",
+      "subject":"NodeJS",
+      "title": "71. Writing an Express App"
+    },
+    {
+      "link": "NodeJS/Express2/app.js",
+      "subject":"NodeJS",
+      "title": "72. Static Files & Installing Pug template engine"
+    },
+    {
+      "link": "NodeJS/Express3/app.js",
+      "subject":"NodeJS",
+      "title": "73. Using raw HTML in Pug template engine"
+    }
+  ],
+  [
+    {
+      "link": "tut80.txt",
+      "subject":"MongoDB",
+      "title": "80. Introduction to MongoDb"
+    },
+    {
+      "link": "tut81.txt",
+      "subject":"MongoDB",
+      "title": "81. Inserting data into the Mongo Database"
+    },
+    {
+      "link": "tut82.txt",
+      "subject":"MongoDB",
+      "title": "82. Searching/Querying data from the Mongo Database"
+    },
+    {
+      "link": "tut83.txt",
+      "subject":"MongoDB",
+      "title": "83. Deleting data from the Mongo Database"
+    },
+    {
+      "link": "tut84.txt",
+      "subject":"MongoDB",
+      "title": "84. Updating data from the Mongo Database"
+    },
+    {
+      "link": "MongoDB/tut85/index.js",
+      "subject":"MongoDB",
+      "title": "85. MongoDb Compass & Installing Mongoose"
+    },
+    {
+      "link": "MongoDB/tut86/index.js",
+      "subject":"MongoDB",
+      "title": "86. Using Mongoose in NodeJs"
+    }
+  ],
+  [
+    {
+      "link": "Minor Projects/gym_Website/project_gymWebsite.html",
+      "subject":"Minor Projects",
+      "title": "Gym Website"
+    },
+    {
+      "link": "Minor Projects/food_delivery_website/index.html",
+      "subject":"Minor Projects",
+      "title": "Food Delivery Website(Responsive)"
+    },
+    {
+      "link": "Minor Projects/clock/index.html",
+      "subject":"Minor Projects",
+      "title": "Analog Clock"
+    },
+    {
+      "link": "Minor Projects/calculator/index.html",
+      "subject":"Minor Projects",
+      "title": "Calculator"
+    },
+    {
+      "link": "Minor Projects/snake/index.html",
+      "subject":"Minor Projects",
+      "title": "Snake Game"
+    },
+    {
+      "link": "Minor Projects/Myntra Clone/index.html",
+      "subject":"Minor Projects",
+      "title": "Myntra Clone"
+    },
+    {
+      "link": "Minor Projects/dance_Website/app.js",
+      "subject":"Minor Projects",
+      "title": "Dance Website"
+    },
+    {
+      "link": "Minor Projects/Tic_tac_toe/index.html",
+      "subject":"Minor Projects",
+      "title": "Tic-tac-toe"
+    },
+    {
+      "link": "Minor Projects/netflix/netflix_plan.html",
+      "subject":"Minor Projects",
+      "title": "Netflix Subscription Plan"
+    },
+    {
+      "link": "Minor Projects/admissionForm/index.html",
+      "subject":"Minor Projects",
+      "title": "College Admission Portal"
+    },
+    {
+      "link": "Minor Projects/toDo/index.html",
+      "subject":"Minor Projects",
+      "title": "To Do List"
+    },
+    {
+      "link": "Minor Projects/weatherApp/index.html",
+      "subject":"Minor Projects",
+      "title": "Weather App"
+    }
+  ]
+]

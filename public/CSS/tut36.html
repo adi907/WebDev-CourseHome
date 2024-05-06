@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes & Animations</title>
+    
+    <style>
+
+        .container{
+            display:flex;
+            background-color: greenyellow;
+
+        }
+        .box{
+            background-color: forestgreen;
+            border:2px solid green;
+
+            position: relative;
+            width:250px;
+            height:30px;
+
+            /* Adding Animation */
+            animation-name: first_anim;
+            animation-duration: 2s;
+            animation-iteration-count: 3;
+            /* Final state of animation when it ends */
+            animation-fill-mode:backwards;
+            animation-timing-function: ease-in;/* First slow then fast  */
+            animation-timing-function: ease-out;/* First fast then slow */
+            animation-timing-function: ease-in-out;/* First slow then fast then slow */
+
+            animation-delay: 2s;/* starts after 2sec */
+            /* how the animation travels */
+            animation-direction:normal;
+
+            /* SHORTHAND */
+            /* animation:animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode */
+        }
+        
+        .box2 img{
+            width: 125px;
+            height:125px;
+            padding:10px;
+        }
+        .box2{
+            background-color: red;
+            width:150px;height:150px;
+            position:relative;
+
+            animation:second_anim 4s ease-in-out 2s infinite alternate;
+            /* animation-direction: alternate; */
+
+        }
+
+        /* Initialising Animation */
+        @keyframes first_anim {
+            from{
+                /* width:12.5px; */
+                width:5%;
+            }to{
+                /* width:400px; */
+                width:100%;
+            }
+        }
+
+        @keyframes second_anim {
+            0%{
+                top:50px;
+                left:50px;
+            }
+            25%{
+                top:300px;
+                left:50px;
+            }
+            50%{
+                top:300px;
+                left:300px;
+            }
+            
+            75%{
+                top:50px;
+                left:300px;
+            }
+            100%{
+                top:50px;
+                left:50px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box">
+            Loading...
+        </div>
+    </div>
+
+    <div class="box2">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/DVD-Video_Logo.svg/1200px-DVD-Video_Logo.svg.png" alt="NO SIGNAL">
+    </div>
+
+</body>
+</html>

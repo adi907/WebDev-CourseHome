@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow & Text shadow</title>
+
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            padding:23px 23px;
+            margin:23px 10px;
+            border:3px solid green;
+            background-color: bisque;
+
+
+            box-shadow: 10px 11px 5px 2px greenyellow;
+            /* (x,y,blur radius,spread radius, color) {x,y can also be -ve (for shadow to come form top)}*/
+
+            /* For box-shadow to be inside the box */
+            /* box-shadow:inset 10px 12px 7px greenyellow; */
+
+            /* For multiple box-shadows */
+            /* box-shadow:5px 6px green, 10px 12px greenyellow; */
+
+            /* Use when background-color & color of container is same & want to emphasize on the container */
+        }
+
+        .card h2{
+            text-shadow:2px 3px 3px gray;
+            /* (x,y,blur radius,color) {x,y can also be -ve for shadow to form on top} */
+            /* Use when you want to highlight text on images or where it isnt emphasized */
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>C/C++</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque eligendi repudiandae rerum ullam ut veniam quidem animi magnam quos provident id nostrum, doloribus nam.</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>Java</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque eligendi repudiandae rerum ullam ut veniam quidem animi magnam quos provident id nostrum, doloribus nam.</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>Python</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque eligendi repudiandae rerum ullam ut veniam quidem animi magnam quos provident id nostrum, doloribus nam.</p>
+        </div>
+    </div>
+</body>
+</html>

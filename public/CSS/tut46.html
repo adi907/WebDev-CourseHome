@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Advanced Hover CSS</title>
+
+    <style>
+      
+        .gallery{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            width:fit-content;
+        }
+        img{
+            margin:5px;
+        }
+
+        /* Hover with showing emphasis on hovered element and disemphasising rest */
+        /* .gallery:hover img{
+            opacity: 0.7;
+        }
+        .gallery img:hover{
+            opacity: 1;
+        } */
+
+        /* Better way to do above (less line of code and also doesnt show effect when you are in blank spaces bw images) */
+        .gallery:has(img:hover) img:not(:hover){
+            opacity: 0.5;
+        }
+
+        /* Selecting previous and after elements which are being hovered */
+        li:has(+ :hover){
+            background-color:  lightgray;
+        }
+        li:hover + li{
+            background-color: gray;
+        }
+
+        /* Selecting all elements previous and all elements after to one being hovered */
+        .showcase-list li:has(~ :hover){
+            background-color: gray;
+        }
+        .showcase-list li:hover ~li{
+            background-color: aqua;
+        }
+
+    </style>
+
+  </head>
+
+
+  <body>
+
+    <div class="gallery">
+        <img src="https://source.unsplash.com/250x250/?beaches" alt="Image of water" width="250" height="250">
+        <img src="https://source.unsplash.com/250x250/?dogs" alt="Image of water" width="250" height="250">
+        <img src="https://source.unsplash.com/250x250/?space" alt="Image of water" width="250" height="250">
+        <img src="https://source.unsplash.com/250x250/?sunset" alt="Image of water" width="250" height="250">
+        <img src="https://source.unsplash.com/250x250/?sports" alt="Image of water" width="250" height="250">
+        <img src="https://source.unsplash.com/250x250/?luxury" alt="Image of water" width="250" height="250">
+        <img src="https://source.unsplash.com/250x250/?cars" alt="Image of water" width="250" height="250">
+        <img src="https://source.unsplash.com/250x250/?india" alt="Image of water" width="250" height="250">
+
+    </div>
+
+    <ul>
+      <li>First list item</li>
+      <li>Second list item</li>
+      <li>Third list item</li>
+      <li>Fourth list item</li>
+      <li>Fifth list item</li>
+    </ul>
+
+    <ul class="showcase-list text-3xl font-bold" style="margin-top: 25px;">
+      <li>First list item</li>
+      <li>Second list item</li>
+      <li>Third list item</li>
+      <li>Fourth list item</li>
+      <li>Fifth list item</li>
+    </ul>
+
+  </body>
+</html>

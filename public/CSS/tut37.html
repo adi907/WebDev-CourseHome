@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions</title>
+
+    <style>
+
+    body{
+        background-color: black;
+    }
+    
+    #box{
+        height:200px; width:200px;
+        background-color: red;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /* transition-property: background-color;
+        transition-duration: 2s;
+        transition-timing-function: ease-out;
+        transition-delay: 1s; */
+        
+        /* SHORTHAND */
+        /* transition: transition-property transition-duration transition-timing function transition-delay; */
+
+        /* Use this when you want transition of only 1 property(background-color) */
+        transition: background-color 2s ease-out 1s;
+        
+        /* Use this when want transition of multiple properties */
+        transition:all 2s ease-in-out 1s;
+
+    }
+    #box:hover{
+        background-color: gray;
+        height:300px;width:300px;
+        border-radius:20px;
+
+        font-size: 45px;
+    }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <h3>CSS Transition</h3>
+    <div class="container">
+        <div id="box">
+            Box
+        </div>
+    </div>
+
+
+</body>
+</html>

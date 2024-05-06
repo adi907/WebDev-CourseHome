@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions</title>
+</head>
+
+
+<body>
+
+    <div class="container">
+        This is arrow functions tutorial
+    </div>
+
+    <script>
+
+
+        // function greet() {
+        //     console.log('Good morning');
+        // }
+        // greet();
+        
+
+
+        // Shortcut(via Arrow function)
+        /* let greet = () => {
+            // console.log('Good Morning');
+        }; */
+
+        // Even more shortcut
+        let greet = () => console.log('Good Morning');
+        greet();
+
+        let sum = (a,b) => a+b ;
+        let half = a => a/2;
+
+        setTimeout(() => {
+            let date=new Date();
+            console.log(date);
+        }, 5000);//executes itself,no need of calling
+
+        let obj1={
+            greeting: "Good Morning",
+            names: ["Harry", "Rohan", "SkillF", "DjKhiladi"],
+            speak(){
+                this.names.forEach((student)=>{
+                    console.log(this.greeting + " Kukdoo Koo " + student);//LEXICAL THIS: this refers to its parent(obj1)attributes
+                });
+            }
+        }
+        obj1.speak();
+
+    </script>
+
+</body>
+</html>

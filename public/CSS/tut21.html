@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
+    <title>Alignment, Float & Clear</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Playfair Display', serif;
+            /* line-height: 23px; */
+        }
+        .container{
+            width:900px;
+            background-color: rgb(217, 108, 96);
+            border:3px solid purple;
+            margin: 33px auto;/*Helps to centre */
+
+           
+        }
+        .item{
+            border:3px solid grey;
+            margin:12px 8px;/*(y,x)*/
+            padding:12px 10px;
+            background-color: rgb(215, 145, 54);
+        }
+        #fruits{
+            float:left;
+            /*Whenever we do float it overflows from its parent(gets out of parent div) */
+            width:48%;/*Need to set width with float */
+            
+        }
+        #computer{
+            float:right;
+            width:48%;
+        }
+        #stationary{
+            /* float:left; */
+            /* If we comment this part out & let other 2 be float then it will overlap the other 2 divs  */
+            width:98%;
+            /*clear:left;*/ /* All float-lefts will stay clear of it */
+            clear:both;/* clears both left & right*/
+        }
+
+        p{
+            text-align:justify;
+        }
+        h3{
+            /* text-align:center; */
+            margin:auto;
+            width:50px;
+        }
+        h1{
+            background-color: rgb(195, 33, 216);
+            color:palevioletred;
+            opacity: 70%;
+            margin:23px auto;
+            width:415px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>WELCOME TO OUR STORE</h1>
+        <div id="fruits" class="item">
+            <h3>FRUITS</h3>
+            <p id="fruitspara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut error dolor at recusandae sit voluptas incidunt et nemo iusto ipsam? Magni corrupti dolores harum modi quas rem ab omnis minus? Exercitationem quod necessitatibus quis!
+            </p>
+        </div>
+        <div id="computer" class="item">
+            <h3>COMPUTER</h3>
+            <p id="computerpara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut error dolor at recusandae sit voluptas incidunt et nemo iusto ipsam? Magni corrupti dolores harum modi quas rem ab omnis minus? Exercitationem quod necessitatibus quis!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur esse voluptatum debitis ipsa cum provident sunt in neque reprehenderit, distinctio maiores, deserunt error doloribus, aliquid eos dignissimos suscipit! Odit dolore neque ullam iusto ad!
+            </p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>STATIONARY</h3>
+            <p id="staitonarypara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut error dolor at recusandae sit voluptas incidunt et nemo iusto ipsam? Magni corrupti dolores harum modi quas rem ab omnis minus? Exercitationem quod necessitatibus quis!
+            </p>
+        </div>
+        <div id="glasses" class="item">
+            <h3>GLASSES</h3>
+            <p id="glassespara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut error dolor at recusandae sit voluptas incidunt et nemo iusto ipsam? Magni corrupti dolores harum modi quas rem ab omnis minus? Exercitationem quod necessitatibus quis!
+            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Admission Mitra</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+
+<body>
+    
+    <div class='signup-container'>
+
+      <div class='left-container'>
+
+            <div id="maintext">
+              <img src="https://cdn-icons-png.flaticon.com/512/4344/4344806.png" alt="">
+              
+              <span>
+                Admission Mitra
+              </span>
+            </div>
+          
+            
+        <!-- </div> -->
+        
+          <!-- <div class='main-img'> -->
+            <img id="mainImg" src='https://images.unsplash.com/photo-1491841550275-ad7854e35ca6?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'>
+          <!-- </div> -->
+
+        </div>
+
+
+        <div class='right-container'>
+          <section>
+            <h1>Discover Your Path! Find the Perfect College Match for Your Future Success</h1>
+
+            <div class='set'>
+
+              <div class='first-name'>
+                <label for='first-name'>First Name</label>
+                <input id='first-name' placeholder="John" type='text'>
+                <span id="fnError" class="error"></span>
+              </div>
+              <div class='last-name'>
+                <label for='last-name'>Last Name</label>
+                <input id='last-name' placeholder="Doe" type='text'>
+                <span id="lnError" class="error"></span>
+              </div>
+              
+            </div>
+
+            <div class='set'>
+
+              <div class='contactNo'>
+                <label for="contactNo">Contact No.</label>
+                <input type="tel" id='contactNo' name="phone">
+                <span id="phnError" class="error"></span>
+              </div>
+
+              <div class='dob'>
+                <label for='dob'>Date of Birth</label>
+                <input id='dob' placeholder='MM/DD/YYYY' type='date'>
+                <span id="dtError" class="error"></span>
+              </div>
+            </div>
+
+            <div class='set'>
+
+              <div class='gender'>
+                <label for='gender'>Gender</label>
+                <div class='radio-container'>
+                  <input checked="" id='gender-female' name="gender" type='radio' value='Female'>
+                  <label for='gender-female'>Female</label>
+                  <input id='gender-male' name="gender" type='radio' value='Male'>
+                  <label for='gender-male'>Male</label>
+                </div>
+              </div>
+
+              <div class='disability'>
+                <label for='disability-yes'>Disability</label>
+                <div class='radio-container'>
+                  <input checked='' id='disability-yes' name='disability' type='radio' value='Yes'>
+                  <label for='disability-yes'>Yes</label>
+                  <input id='disability-no' name='disability' type='radio' value='No'>
+                  <label for='disability-no'>No</label>
+                </div>
+              </div>
+
+            </div>
+
+            <div class='percentage'>
+              <label for='percentage-0-25'>Percentage</label>
+              <div class='radio-container'>
+                <input checked='' id='percentage-0-25' name='percentage' type='radio' value='25'>
+                <label for='percentage-0-25'>0-25%</label>
+                <input id='percentage-25-50' name='percentage' type='radio' value='50'>
+                <label for='percentage-25-50'>25-50%</label>
+                <input id='percentage-50-75' name='percentage' type='radio' value='75'>
+                <label for='percentage-50-75'>50-75%</label>
+                <input id='percentage-75-100' name='percentage' type='radio' value='100'>
+                <label for='percentage-75-100'>75-100%</label>
+              </div>
+            </div>
+
+          </section>
+
+
+          
+            <div class='btnArea'>
+              
+
+                <h3 id="errorData"></h3>
+                <button type="button" id='next' onclick="dataSubmit()">Next</button>
+              
+            </div>
+          
+        </div>
+
+    </div>  
+
+    <div id="loading-overlay">
+      <div class="loader"></div>
+  </div>
+
+<script src="app.js"></script>    
+    
+</body>
+</html>

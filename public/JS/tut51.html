@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope, If-else Conditionals & Switch Case in JavaScript</title>
+</head>
+
+<body>
+    <!-- done by simply: div>ul>li{Item-$}*7 -->
+    <div>
+        <ul>
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+            <li>Item-4</li>
+            <li>Item-5</li>
+            <li>Item-6</li>
+            <li>Item-7</li>
+        </ul>
+    </div>
+
+    <script>
+        //Global variable string 1 created
+        var string1="This is a string";
+        console.log(string1);
+        
+        //Global variable string 1 created AGAIN
+        var string1=string1.replace("string","string2");//No error in redeclaring a variable as we will never know if we are overwriting an existing variable while creating a new one
+        console.log(string1);
+
+        //Block-scoped variable created
+        let name="Adi";
+        // let name="Platypus";Gives error on redeclaring
+        console.log(name);//Gives "Adi"
+        {
+            let name="Platypus";//Doesnt give error this time bcz this variable only valid till this block   
+            console.log(name);//Gives "Platypus"
+        }
+        console.log(name);//Gives "Adi"
+
+        const a="This cannot be changed"
+        // a="Trying to change this constant a, but I know i'll fail";//Gives error
+
+        let age=34;
+        if(age>18){
+            console.log("You can vote");
+        }else if(age==69){
+            console.log("Noice");
+        }else{
+            console.log("You cannot vote");
+        }
+
+        const month=7;
+        switch(month){
+            case 1:
+                console.log("Monday");
+                break;
+            case 2:
+                console.log("Tuesday");
+                break;
+            case 3:
+                console.log("Wednesday");
+                break;
+            case 4:
+                console.log("Thursday");
+                break;
+            case 5:
+                console.log("Friday");
+                break;
+            case 6:
+                console.log("Saturday");
+                break;
+            case 7:
+                console.log("Sunday");
+                break;
+            default:
+                console.log("You are in a different dimension");
+                break; 
+        }
+
+    </script>
+</body>
+</html>

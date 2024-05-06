@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tutorial</title>
+    <!-- EXTERNAL CSS -->
+    <!-- Has same precedence as that of Internal CSS depends on which file is saved latest -->
+
+    <link rel="stylesheet" href="tut14.css">
+
+    <style>
+        /* INTERNAL CSS */
+        p{
+            color:purple;
+            background-color: seagreen !important;
+            /* Use important to overpower all other properties  */
+        }
+    </style>
+
+
+</head>
+<body>
+    <h3>CSS Tutorial</h3>
+    <p style="color: red;">This is inline CSS</p>
+    <!-- Has higher precedence than inline & externa CSS -->
+    <!-- Makes HTML messy & should not be used extensively -->
+    
+</body>
+</html>

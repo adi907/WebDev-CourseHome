@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute & nth child pseudo-selectors</title>
+
+    <style>
+        .container{
+            display:block;
+            margin:auto;
+            width:233px;
+            padding:10px;
+        }
+        input{
+            display:block;
+        }
+        input[type='text']{
+            /* selects inputs having type=text */   
+            border:2px solid red;
+        }
+        a[target]{
+            /* selects anchor tags which have a target set */
+            font-size:25px;
+            color:violet;
+        }
+        a[target='_self']{
+            color:rgb(13,22,151);
+            font-size:35px;
+        }
+
+        /* Exact child or Multiples */
+        .my-list:nth-child(3){
+            color:burlywood;
+            font-size: 30px;
+        }
+        .my-list:nth-child(4n+1){
+            color:rgb(105, 202, 128);
+            font-size:30px;
+        }
+
+        /* ODD CHILD */
+        .my-list:nth-child(odd){
+            background-color: red;
+        }
+        /* EVEN CHILD */
+        .my-list:nth-child(even){
+            background-color: blue;
+        }
+
+        /* Selects every third element among any group of siblings */
+        :nth-child(3) {
+          background: orangered;
+        }
+        
+        /* Selects all after a particular limit */
+        li:nth-child(n+4) { /*Doesnt work with class name .nth-sel:nth-child(n+3){ */
+          color:violet;
+        }
+
+        /* Select after a limit and exclude some */
+        li:nth-child(n+7):nth-child(-n+9)  { /* -n+9 means start from 9th and go backwards; since intersection of the 2 cases means only 7,8,9 will be selected */ 
+          color:white;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+
+        <a href="Home.html" target="_blank">Course Homepage</a>
+        <br>
+        <a href="http://google.com">Go to Google</a>
+        <br>
+        <a href="http://facebook.com" target="_self">Go to Facebook</a>
+        
+        <form action="" class="form-control">
+            <input type="text" placeholder="Name">    
+            <input type="password" placeholder="Password">    
+            <input type="submit" value="submit">    
+        </form>
+
+        <ul class="my-list">
+            <li class="item" id="item1">Item1</li>
+            <li class="item" id="item2">Item2</li>
+            <li class="item" id="item3">Item3</li>
+            <li class="item" id="item4">Item4</li>
+            <li class="item" id="item5">Item5</li>
+            <li class="item" id="item6">Item6</li>
+            <li class="item" id="item7">Item7</li>
+            <li class="item" id="item8">Item8</li>
+            <li class="item" id="item9">Item9</li>
+            <li class="item" id="item10">Item10</li>
+        </ul>
+
+        <!-- <ul class="nth-sel">
+            <li>Item1</li>
+            <li>Item2</li>
+            <li>Item3</li>
+            <li>Item4</li>
+            <li>Item5</li>
+            <li>Item6</li>
+            <li>Item7</li>
+            <li>Item8</li>
+            <li>Item9</li>
+            <li>Item10</li>
+        </ul> -->
+
+        <ul>
+            <li>First list item</li>
+            <li>Second list item</li>
+            <li>Third list item</li>
+            <li>Fourth list item</li>
+            <li>Fifth list item</li>
+        </ul>
+
+    </div>
+
+</body>
+</html>

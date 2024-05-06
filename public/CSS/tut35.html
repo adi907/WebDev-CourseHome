@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables & Custom Properties</title>
+
+    <style>
+        :root{
+            /* Declaring global variable */
+            --primary-color:blue;
+            --danger-color:red;
+            --maxheight:500px;
+            --maxwidth:733px;
+        }
+
+        .box{
+            /* Declaring local variable(scope upto box container only) */
+            --box-color:blueviolet;
+
+            width:200px;
+            height:200px;
+            /* background-color: blueviolet; */
+            /* Using variable */
+            background-color: var(--box-color);
+            box-shadow: 10px 12px 7px var(--box-color);
+            
+            border:2px solid blue;
+            margin:2px 10px;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+
+            width:var(--maxwidth);
+            background-color:var(--danger-color);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+        <div class="box">
+
+        </div>
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+</html>

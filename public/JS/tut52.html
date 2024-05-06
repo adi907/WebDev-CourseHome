@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays & Objects</title>
+</head>
+
+<body>
+    <div class="container">
+        Simple si HTML
+    </div>
+
+    <script>
+        
+        // PRIMITIVE DATA TYPES
+        let myVar = 34;
+        let myVar2 = "string";
+        let myVar3 = true;
+        let myVar4 = null;
+        let myVar5 = undefined;
+
+        //OBJECTS(data types apart from the primitive ones(made by us custom))
+        let employee = {
+            name: "Harry",
+            salary: 10,
+            channel: "CodeWithHarry",
+            "channel 2": "ProgrammingWithHarry",
+        }
+        console.log(employee);
+        console.log(employee.salary);
+        console.log(employee['salary']);
+        // console.log(employee['"channel 2"']);WRONG
+        console.log(employee['channel 2']);
+
+        //ARRAYS(high level, list-like objects)
+        // make it easier to iterate through each and every element present in DOM(Document Object model)
+        let names = [4, 2, "Harry",1, undefined];
+        console.log(names[2])
+        names = names.sort();
+        console.log(names);
+
+        let school1 = new Array(23);//Creates array of size 23(all elements of value=undefined)
+        console.log(school1.length);
+
+        let school2= new Array(23,69);//Creates an array with elements {23,69} i.e(size=2)
+        console.log(school2.length);
+        
+        let college = new Array("Design","Engineering","Law", "Arts", 2500000);
+        college.push("Berozgari",undefined);
+        console.log(college);
+
+    </script>
+
+</body>
+</html>

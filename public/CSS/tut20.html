@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model,Margin & Padding</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            /*The specified width and height on this element determine the border box of the element*/
+            margin:0px;
+            padding:18px;
+            /* Sets default margin & padding to 0 unless specified otherwise (doubt in this as doesnt do same as in video & universal is implemented everywhere & overwrites everything*/
+
+        }
+
+        body{
+            background-color: rgb(169, 162, 202);
+        }
+
+        .container{
+            background-color: burlywood;
+            border:3px solid rgb(64,6,119);
+            /*
+            padding:9px;Internal distance to border 
+            margin:34px;External distance to border
+        
+            padding-top:9px;
+            padding-right:15px;
+            padding-bottom:9px;
+            padding-left:15px;
+            */
+            padding:9px 15px 9px 15px;/* <-ALL IN 1 */
+            /*other way: padding: y(top/bottom) x(left/right); */
+        
+            /*
+            margin-top:29px;
+            margin-right:34px;
+            margin-bottom:29px;
+            margin-left:34px;
+            */
+            margin:29px 34px 29px 34px;/* <-ALL IN 1 */
+
+            /* Similarly 4 attributes for border */
+
+            border-radius: 23px;
+            width:500px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, dolorem maiores! Minima vitae, illum itaque esse expedita porro praesentium eligendi omnis distinctio perferendis?</p>
+    </div>
+    <div class="container">
+        <h3>Heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, dolorem maiores! Minima vitae, illum itaque esse expedita porro praesentium eligendi omnis distinctio perferendis?</p>
+    </div>
+    <div class="container">
+        <h3>Heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, dolorem maiores! Minima vitae, illum itaque esse expedita porro praesentium eligendi omnis distinctio perferendis?</p>
+    </div>
+</body>
+</html>

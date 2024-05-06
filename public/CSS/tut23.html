@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+
+    <style>
+        .navbar{
+            background-color: black;
+            border-radius: 30px;
+        }
+        .navbar ul{
+            overflow:auto;
+        }
+        .navbar li{
+            float:left;
+            /* makes li get out of parent container(controlled by overflow:auto)*/
+            list-style: none;
+            padding:3px 3px;
+            margin:13px 20px;
+            /* margin:8px auto; */
+            /* width:200px; */
+        }
+        /* .navbar li:hover{
+            background-color: gray;
+        } */
+        .navbar li a{
+            padding:3px 3px;
+            text-decoration: none;
+            color:whitesmoke;
+        }
+        .navbar li a:hover{
+            color:gray;
+        }
+
+        .navbar input{
+            border: 2px solid gray;
+            border-radius: 2px;
+            padding: 3px 13px;
+            width:130px;
+        }
+
+        .search{
+            float:right;
+            color:white;
+            padding:15px 75px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="www.facebook.com">Home</a></li>
+                <li><a href="www.facebook.com">About</a></li>
+                <li><a href="www.facebook.com">Services</a></li>
+                <li><a href="www.facebook.com">Contact Us</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="search in this website">
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

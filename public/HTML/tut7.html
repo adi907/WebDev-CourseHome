@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables & Lists</title>
+</head>
+
+<style>
+    table,th,td{
+        border:1px solid black;
+        border-collapse: collapse;
+    }
+    table{
+        border:2px solid black;
+    }
+    th{
+        background-color: #2b4cf4;
+    }
+
+    td{
+        text-align:center;
+        background-color: #96D4D4;
+       
+    }
+</style>
+
+<body>
+
+    <!-- Lists -->
+    <h2> HTML Lists </h2>
+
+    <ul type="circle">
+        <li>First item of my unordered list</li>
+        <li>Second item of my unordered list</li>
+        <ol type="a">
+            <li>Nested list item a(Ordered)</li>
+            <li>Nested list item b(Ordered)</li>
+        </ol>
+        <li>Third item of my unordered list</li>
+    </ul>
+
+    <ol type="I">
+        <li>First item of my ordered list</li>
+        <li>Second item of my ordered list</li>
+        <li>Third item of my ordered list</li>
+    </ol>
+
+
+    <!-- Tables -->
+    <h2> HTML Tables </h2>
+
+    <table style="width:80%">
+        <thead>
+            <tr>
+                <th style="width:20%">Name</th>    
+                <th style="width:40%">Student ID</th>    
+                <th style="width:10%">Branch</th>    
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Aditya</td>
+                <td>209301509</td>
+                <td>CSE</td>
+            </tr>
+
+            <tr>
+               <td>Divij</td>
+               <td>209301337</td>
+               <td>IT</td> 
+            </tr>
+            <tr>
+               <td>Ananmaya</td>
+               <td>209301410</td>
+               <td>Mechatronics</td> 
+            </tr>
+            <tr>
+               <td>Aryan</td>
+               <td>209301518</td>
+               <td>CSE</td> 
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

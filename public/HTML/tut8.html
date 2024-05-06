@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h2>HTML FORMS</h2>
+
+    <form action="backend.php">
+        <!-- Use divs instead of br & if want more then use padding & margin -->
+        
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="myName" id="name">
+        </div>
+        <!-- By using label when we click on text it highlits the input part-->
+        <!-- name is what allows backend to identify as avariable -->
+        <div>
+            <label for="myId">Registration ID: </label>
+            <input type="text" name="myId" id="myId">
+        </div>
+        <div>
+            <label for="myEmail">Email: </label>
+            <input type="email" name="myEmail" id="myEmail">
+        </div>
+        <div>
+            <label for="myDOB">Date of Birth:</label>
+            <input type="date" name="DOB" id="myDOB">
+        </div>
+        <div>
+            <label for="domain">What is your Technical domain:</label>
+            <select name="myDomain" id="domain">
+                <option value="wbd" selected>Web Development</option>
+                <option value="apd" >Application Development</option>
+                <option value="ml">Machine Learning</option>
+                <option value="ai">Artificial Intelligence</option>
+            </select>
+        </div>
+        <div>
+            Gender: Male <input type="radio" name="sex"> Female <input type="radio" name="sex">
+        </div>
+
+        <div>
+            Are you above 18 years of age: <input type="checkbox" name="adult" checked>
+        </div>
+        <div>
+            <label for="mySal">Salary: </label>
+            <input type="number" name="sal" id="mySal">
+        </div>
+
+        <div>
+            <label for="bio">Write about yourself:</label><br>
+            <textarea name="myText" cols="50" rows="5" id="bio"></textarea>
+        </div>
+
+        <div>
+            <input type="submit" value="Submit">
+        
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,7 @@
+// Updatings items in the Mongo Database
+
+// updateOne will update the matching document entry(will update the first entry in case of multi document match)
+db.items.updateOne({name: "Moto 30s"}, {$set: {price: 2}})
+
+// updateMany will update all the matching document entries
+db.items.updateMany({name: "Moto 30s"}, {$set: {price: 3, rating: 1}})

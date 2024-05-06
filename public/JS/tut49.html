@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings in JavaScript</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Lorem ipsum dolor sit.</h1>
+
+        <div id="content"></div>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam necessitatibus itaque, dolorum voluptas modi eaque quod cumque ab ducimus harum dolores consectetur magni voluptatibus nemo vitae mollitia, culpa quasi eos est beatae commodi qui.</p>
+    </div>
+
+    <script>
+
+    var name = 'Adi';
+    var study = 'Manipall University Jaipur';
+    var message = 'Adi is a bad boy';
+    var salary=69420;
+    var months=12;
+    // var temp = name+"is a 'bad' person 'and' he studies at university called"+ study+ "with an annual salary of $"+(salary*months);
+
+    // ALTERNATE WAY
+    var temp = `${name} is a 'bad' person "and" he studies at university called ${study} with an annual salary of $ ${salary*months}`;
+
+    console.log(temp);
+
+    var len=study.length;
+    console.log(`Length of the string ${study} is ${len}`);
+    console.log("Length of name string:"+name+"is:"+name.length);
+
+    console.log('Hello world\n Adi this side');//Escape sequence character
+
+    var y=new String("ogaboogabooga");
+    console.log(y);
+
+    document.getElementById('content').innerHTML = '<h3>Inserted this via getElement & also by string function</h3>'
+    </script>
+</body>
+</html>

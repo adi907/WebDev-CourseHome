@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Media Queries with CSS Grid</title>
+
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+
+            grid-template-areas: 
+            'navbar_main navbar_main navbar_main navbar_main'
+            'section_1 section_1 section_1 aside'
+            'footer footer footer footer'
+            ;            
+        }
+
+        #navbar{
+            grid-area:navbar_main;
+        }
+        #section{
+            grid-area:section_1;
+
+        }
+        #aside{
+            grid-area:aside;
+        }
+        footer{
+            grid-area: footer;
+
+            text-align: center;
+        }
+
+        .bdr{
+            background-color: burlywood;
+            border:2px solid brown;
+            padding: 5px 10px;
+
+        }
+
+        @media only screen and (max-width:300px) {
+            body{
+                background-color: red;
+            }
+            .container{
+                display: grid;
+                grid-gap: 1rem;
+
+                grid-template-areas: 
+                'navbar_main navbar_main navbar_main navbar_main'
+                'section_1 section_1 section_1 section_1'
+                'aside aside aside aside'
+                'footer footer footer footer'
+                ;         
+            }
+            aside{
+                display:none;
+            }
+            span{
+                display:block;
+                text-align: center;
+            }
+        }
+        @media only screen and (min-width: 300px) and (max-width:500px){
+            body{
+                background-color: blue;
+            }
+            .container{
+                display: grid;
+                grid-gap: 1rem;
+
+                grid-template-areas: 
+                'navbar_main navbar_main navbar_main navbar_main'
+                'section_1 section_1 section_1 section_1'
+                'aside aside aside aside'
+                'footer footer footer footer'
+                ;         
+            }
+            aside{
+                display: none;
+            }
+            span{
+                display:block;
+                text-align: center;
+            }
+        }
+        @media (min-width: 500px) and (max-width:800px) {
+            body{
+                background-color: yellow;
+            }
+            .container{
+                display: grid;
+                grid-gap: 1rem;
+
+                grid-template-areas: 
+                'navbar_main navbar_main navbar_main navbar_main'
+                'section_1 section_1 section_1 section_1'
+                'aside aside aside aside'
+                'footer footer footer footer'
+                ;         
+            }
+            span{
+                display:block;
+                text-align: center;
+            }
+
+        }
+        @media (min-width: 800px) {
+            body {
+                background-color: green;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    
+    <div class="container">
+        <nav class="bdr" id="navbar">
+            <span>HOME</span>
+            <span>ABOUT</span>
+            <span>SERVICES</span>
+            <span>CONTACT</span>
+        </nav>
+
+        <section class="bdr" id="section">
+            <h2>Learn CSS with Harry</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure possimus laudantium eaque labore ipsam, pariatur ipsum beatae autem adipisci? Id suscipit eum recusandae. Atque cum eaque distinctio voluptatem alias tenetur nisi eligendi doloribus omnis.</p>
+        </section>
+
+        <aside id="aside">
+            <h1 class="bdr">More about us</h1>
+        </aside>
+    </div>
+
+    <footer class="bdr">Copyright©️ Adi 2020</footer>
+</body>
+</html>

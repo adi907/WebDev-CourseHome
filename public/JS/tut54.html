@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction using Alert, Prompt and Confirm</title>
+
+    <style>
+        body{
+            background: url('https://source.unsplash.com/450x450/?party') no-repeat center center/cover;
+            border:2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        This is a page
+    </div>
+
+    <script>
+
+        //Alert
+        alert("!Danger! This is a message sent to disturb you");
+        //opens a modal window(cant go to main page until dealing with this)
+        //Doesnt return anything(can only press 'OK')
+
+        //Prompt(takes input which can be stored and used later)
+        let name=prompt("What is your name?","Guest");//Guest is the default argument
+        console.log(name);
+
+        //Confirm(takes OK or Cancel as input and turns it to true & false which can be stored and used later)
+        let deleteAccount=confirm("Do you really want to delete your account?");
+        console.log(deleteAccount)
+        //returns True:OK ; False:Cancel
+
+        if(deleteAccount){
+            console.log("Your account has been deactivated succesfully!")
+        }
+
+        /* ASSIGNMENT
+        
+        alert("!!Welcome to the club!!")
+        let age=prompt("Please enter your age","")
+        if(age<=18){
+            alert("You gotta go man. I mean kid")
+        }else{
+            alert("Enjoy your time!")
+        }
+        */
+
+    </script>
+
+</body>
+</html>

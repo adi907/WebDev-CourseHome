@@ -1,0 +1,5 @@
+use db_name --> switches to that database even if not created before
+show dbs --> shows all current databases(doesnt show the selected db if no file is created inside it with some data)
+show collections --> shows all collections(tables) in the current choosen database
+db.file_name --> creates a collection inside db with name: file_name
+db.file_name.insert({}) --> inserts data in the file_name collection

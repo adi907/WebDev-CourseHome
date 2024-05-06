@@ -1,0 +1,281 @@
+/* CSS Reset */
+*{
+    margin:0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height:69px;
+    
+}
+
+/* Navigation Bar */
+#navbar{
+    display:flex;
+    align-items: center;
+    position:sticky;
+    top:0px;
+    
+}
+
+#navbar::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top:0px;left:0px;
+    width:100%;height:100%;
+    background-color:black;
+    z-index: -1;
+
+    opacity:0.6;
+
+}
+
+#logo{
+    padding:1px 1px;
+    margin:7px 30px;
+    background-color: rgba(252, 218, 0, 0.979);
+
+}
+
+#logo img{
+    height:60px;
+    margin:5px 5px;
+
+    
+}
+
+#navbar ul{
+    display:flex;
+    font-family: 'Open Sans', sans-serif;
+}
+#navbar ul li{
+    list-style: none;
+    font-size:1.5rem;
+}
+#navbar ul li a{
+    color:white;
+    display:block;
+    padding:3px 22px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+}
+
+/* Home Section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+
+    padding:0px 200px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('../img/b2.jpg') no-repeat center center/cover;
+    height: 647px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.88;
+}
+
+#home h1{
+    color:rgb(241, 195, 102);  
+    /* color:white; */
+    opacity: 80%;  
+    text-align: center;
+    
+    
+}
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: 'Bree Serif', serif;
+    
+}
+
+/* Services section */
+.services-container{
+    position: relative;
+    height:700px;
+}
+#services{
+    display:flex;
+}
+#services-container::before{
+    content: "";
+    position:absolute;
+    width:100%;height:715px;
+    background-color: wheat;
+    z-index: -1;
+
+}
+#services .box{
+    border:2px solid brown;
+    padding:34px;
+    margin:23px 34px;
+    background-color: rgb(243, 226, 226);
+
+}
+#services .box img{
+    display:block;
+    margin:auto;
+    height:200px;
+}
+#services .box p{
+    font-family: 'Bree Serif', serif;
+    
+}
+
+/* Client Section */
+#client-section{
+    /* height:344px; */
+    position:relative;
+    left:0px;
+    width:100%;  
+}
+
+#client-section::before{
+    content:"";
+    position:absolute;
+    /* left:0px; */
+    width:100%;height:100%;
+    
+    background:url('../img/b3.jpg')no-repeat center center/cover;
+    color:black;
+    
+    z-index: -1;
+    opacity:0.8;
+}
+#client-section h1{
+    color:wheat;
+    opacity: 85%;
+}
+
+#clients{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.client-item{
+    padding:34px;
+}
+
+#clients img{
+    height:100px;
+}
+#apple img{
+    filter: invert(100%);
+}
+#hp img{
+    height:140px;
+}
+#hcl img{
+    height:100px;
+    width:215px;
+}
+
+/* Contact section */
+#contact{
+    position:relative;
+
+}
+#contact::before{
+    content: "";
+    position:absolute;
+
+    background:url(../img/contact.jpg) no-repeat center center/cover;
+    width:100%;height:100%;
+    z-index:-1;
+    opacity:0.8;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 34px;
+    padding-bottom: 34px;
+}
+#contact-box form{
+    width:40%;
+}
+#contact-box input,
+#contact-box textarea{
+    width:100%;
+    padding:0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box label{
+    font-size:1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+footer{
+    background:black;
+    color:white;
+    padding:15px;
+}
+footer span{
+    margin:0px 10px;
+}
+
+
+/* Utility classes */
+.h-primary{
+    font-size:5rem;
+    padding-bottom: 60px;
+    letter-spacing: 4px;
+    word-spacing: 8px;
+    font-family: 'Dancing Script', cursive;
+
+}
+.h-secondary{
+    font-size:2rem;
+    padding:12px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.h-tertiary{
+    font-size:4rem;
+    font-weight: bold;
+    padding:10px 45px;
+    letter-spacing: 4px;
+    word-spacing: 8px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.btn{
+    padding:6px 20px;
+    border:2px solid white;
+    background-color: salmon;
+    margin:17px;
+    color:white;
+    font-size:1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spanning Multiple Rows & Columns in Grid</title>
+
+    <style>
+
+        .container{
+            display: grid;
+
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: repeat(2,1fr);
+            grid-auto-rows: 1fr;/* both these lines can be combines as repeat(4,1fr) but did this just to show grid auto rows */
+
+            grid-row-gap:1rem;
+            grid-column-gap: 2rem;
+
+
+        }
+
+        .box{
+            background-color: burlywood;
+            border:2px solid brown;
+            padding:23px;
+        }
+        .box:nth-child(2){
+            /* Make first box take spaces of 4boxes */
+            /* Use the start,end to decide @which cordinate to place this joined box */
+            grid-column-start: 2;
+            grid-column-end: 4;
+
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        .box:nth-child(11){
+            /* Shortcut */
+            grid-column: 4 / span 2;
+            /* grid-row: 3 / span 2; */
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="box">Item-1</div>
+        <div class="box">Item-2</div>
+        <div class="box">Item-3</div>
+        <div class="box">Item-4</div>
+        <div class="box">Item-5</div>
+        <div class="box">Item-6</div>
+        <div class="box">Item-7</div>
+        <div class="box">Item-8</div>
+        <div class="box">Item-9</div>
+        <div class="box">Item-10</div>
+        <div class="box">Item-11</div>
+        <div class="box">Item-12</div>
+        <div class="box">Item-13</div>
+        <div class="box">Item-14</div>
+        <div class="box">Item-15</div>
+        <div class="box">Item-16</div>
+        <div class="box">Item-17</div>
+        <div class="box">Item-18</div>
+        <div class="box">Item-19</div>
+        <div class="box">Item-20</div>
+    </div>
+</body>
+</html>

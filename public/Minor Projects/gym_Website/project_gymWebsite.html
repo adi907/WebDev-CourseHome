@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap" rel="stylesheet">
+
+    <style>
+        /* CSS Reset */
+
+        header::before{
+            /* background-size:cover; */
+            content:"";
+            background-image: url('media/p2.jpg');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            
+            position:absolute;
+            height:100%;width:100%;
+            top:0;left:0;
+            z-index: -3;
+            opacity: 0.85;
+            
+        }
+        
+        body{
+
+            font-family: 'Oswald', sans-serif;
+            margin:0px;
+            padding:0px;
+
+            color:white;
+        }
+        
+
+        .left{
+            /* border:2px solid green; */
+            display: inline-block;/*  we want it to cover space that is exactly equal to its size(INLINE) as well as have properties of Block so it can be positioned etc*/ 
+            position:absolute;/* positioned relative to parent div(header)*/
+            left:40px;top:15px;
+
+        }
+        .left img{
+            width:125px;
+            /* filter:invert(90%);turns black to white & white to black */
+            mix-blend-mode: color-burn;
+        }
+        .left div{
+            text-align: center;
+            line-height: 25px;
+            font-size: 18px;
+        }
+
+        .mid{
+            /* border:2px solid blue; */
+            /* to center always do these 3(margin:auto,give width,display as block element) */
+            margin:50px auto;
+            display: block;
+            width:55%;
+            font-family: 'Lato', sans-serif;
+        }
+        .right{
+            /* border:2px solid red; */
+            display:inline-block;
+            position:absolute;
+            right:34px;top:47px;
+        }
+
+        .navbar{
+            display:block;
+
+        }
+        .navbar li{
+            display:inline-block;
+        }
+        .navbar li a{
+            font-family: 'Nunito Sans', sans-serif;
+            color:white;
+            text-decoration: none;
+            padding:20px;
+            font-size: 28px;
+            opacity: 70%;
+            
+        }
+        .navbar li a:hover, .navbar li a:active{
+            /* text-decoration:underline; */
+            color:rgb(84, 84, 84);
+        }
+
+        .btn{
+            font-family: 'Oswald', sans-serif;
+            margin:0px 7px;
+            color:white;
+            background-color: black;
+            padding:10px 18px;
+            border:2px solid gray;
+            border-radius: 10px;
+            font-size:15px;
+            cursor:pointer;
+        }
+        .btn:hover{
+            background-color: rgb(94, 93, 93);
+        }
+
+        .container {
+            /* border: 2px solid green; */
+            margin: 74px 30px;
+            padding: 13px 24px;
+            width: 45%;
+            border-radius: 16px;
+        }
+
+        .quote{
+            display: inline-block;
+            position:absolute;
+            top:470px;right:30px;
+
+            word-spacing: 5px;
+            letter-spacing: 5px;
+        }
+        .quote h1:hover{
+            /* letter-spacing:10px; */
+            /* color:rgb(100, 1, 1); */
+            font-size: 40px;
+        }
+                
+        input{
+            font-family: 'Lato', sans-serif;
+            display: block;
+            width:300px;
+            padding: 8px;   
+            /* border:2px solid black; */
+            border:transparent;
+            margin:30px 20px;
+            
+            outline:none;
+            font-size:15px;
+            border-radius:6px;
+
+        }
+        .form_grp button{
+            display: block;
+            margin:20px 30px;
+        }
+
+        fieldset{
+            border:2px solid #0D0000;
+        }
+
+        legend{
+            text-align:left;
+            color:#FF0000;
+            opacity: 50%;
+            font-size:35px;
+            padding: 0px 8px;
+        }
+
+    </style>
+    
+</head>
+<body>
+
+    <header class="header">
+
+        <!-- left box for logo -->
+        <div class="left">
+
+            <img src="media/logo.jpg" alt="dumbell logo.jpg" id="logo">
+            <div>ALCATRAZ FITNESS</div>
+
+        </div>
+
+        <!-- mid box for navbar -->
+        <div class="mid">
+
+            <ul class="navbar">
+                <li><a href="#" class="active">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">STORE</a></li>
+                <li><a href="#">CONNECT</a></li>
+            </ul>
+
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            
+            <button class="btn">
+                Call📞
+            </button>
+            <button class="btn">
+                Email📧
+            </button>
+        </div>
+
+    </header>
+
+    <div class="container">
+        <form action="noaction.php">
+            <fieldset>
+                <legend>JOIN US</legend>
+                <div class="form_grp">
+                    <label for="Name"></label>
+                    <input type="text" name="Name" class="boxes" placeholder="Name:">
+                
+                    <label for="phone"></label>
+                    <input type="tel" name="phone" class="boxes" placeholder="Contact no.:">
+                
+                    <label for="Email"></label>
+                    <input type="email" name="Email" class="boxes" placeholder="Email:">
+                
+                    <button class="btn">
+                        Submit
+                    </button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+        
+    <div class="quote">
+        <h1 style="text-align:center;color:red; opacity: 100%;">
+            U.N.L.E.A.S.H</h1>
+        <h2 style="text-align:center;color:red;opacity:50%">THE INNER BEAST</h2>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform</title>
+
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+
+        .container{
+            background:bisque;
+            height:80vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box{
+            background: burlywood;
+            border:2px solid brown;
+            border-radius: 10px;
+            height:300px;width:300px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            /* transform: rotate(45deg); Can also be done here instead of in hover but doesnt produce the hover transition then*/
+            transition: transform 1s ease-out 0.5s;
+            /* Different transforms can be performed together by changing in transform section, but for multiple transitions other than transform, then use all or the specific names */
+        }
+
+        .box:hover{
+            /* For single property to function */
+            transform: rotate(360deg);
+            transform: skew(45deg);
+            transform:scale(2);
+
+            transform:translate(120px, 120px);
+            transform:translateX(120px);
+            transform:translateY(120px);
+
+            /* For multiple properties to function */
+            transform: rotate(45deg) skew(45deg);
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+
+</body>
+</html>

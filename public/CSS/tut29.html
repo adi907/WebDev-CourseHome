@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size units</title>
+
+    <style>
+        html{
+            font-size:25px;
+        }
+        h1{
+            text-align: center;
+        }
+        .container{
+            font-size:10px;/* Parent container will decide size of em's multiple of child divs inside it */
+
+            border:2px solid red;
+            height:100vh;
+            /* 100% of viewport height(covers all page height) */
+            width:100vw;
+            /* 100% of viewport width(covers all page width) */
+
+        }
+        #first{
+            font-size: 5em;
+            /* 5times size of parent-container(i.e 10px*5=50) */
+            padding:3em;
+            /* 3times total space taken by element it covers i.e font-size(first)= 70*3=210px  */
+        }
+        #second{
+            font-size:3rem;
+            /* Done on basis of base HTML(root element) font-size(25*3=75px) */
+            padding:2rem;
+            /* 2x the size of root element font-size(50px) */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="first">First Heading</h1>
+        <h1 id="second">Second Heading</h1>
+        <h1 id="third">Third Heading</h1>
+    </div>
+</body>
+</html>

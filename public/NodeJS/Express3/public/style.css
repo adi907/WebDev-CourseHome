@@ -1,0 +1,87 @@
+*{
+    font-family: sans-serif;
+    margin:0px;padding:0px;
+}
+
+/* body{
+    background-image: url('/static/bg.jpg');
+    background-image: url('../static/bg.jpg');
+    opacity: 0.9;
+    
+} NOT DOING THIS FOR BACKGROUND as when changing opacity, it also changes opacity of all contents of body with it
+*/
+
+body::before{
+    content:"";
+    position:absolute;
+    height:100%;width:100%;
+    top:0;left:0;
+    
+    background-image: url('/static/bg.jpg');
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    
+    z-index: -1;
+    opacity:0.8;
+}
+
+
+nav{
+    background-color: black;
+    padding:12px;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+li{
+    list-style:none;
+    padding:3px 4px;
+}
+
+a{
+    text-decoration: none;
+    color:gray;
+    font-weight: bold;
+}
+
+h1,h3{
+    text-align: center;
+    padding:5px;
+}
+
+.container{
+    margin:34px auto;
+    padding:12px;
+    background-color: #3F4E4F;
+    max-width: 70%;
+}
+
+input, textarea{
+    display:block;
+    padding:8px 12px;
+    margin:15px;
+    width:60%;
+    border:2px solid black;border-radius:8px;
+}
+
+#btn{
+    margin:15px;
+    padding:5px 12px;
+    
+    background:grey;
+    outline:none;
+    border:transparent;
+    border-radius: 4px;
+
+    font-weight:bold;
+    font-size:15px;
+    color:white;
+
+    cursor:pointer;
+}

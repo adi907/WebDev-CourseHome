@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Using plain html in Pug</title> -->
+    <title>#{title}</title>
+
+    <!-- to link css, use server side url for stylesheet -->
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+ 
+<body>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <!-- <h2>This is plain html using Pug</h2> -->
+        <h1>#{message_head}</h2>
+        <h3>#{message_body}</h2>
+        
+        //- To render this just as simple plain html(no h2): ADD A PIPE( "|")
+        //-     | #{message_body}
+
+        <form action="/" method="post" id="contact">
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+            //- here the name part plays role in backend{not the id}
+
+            <input type="number" id="age" name="age" min="1" max="99" placeholder="Age">
+
+            <input type="text" name="gender" id="gender" placeholder="Enter your gender">
+
+            <textarea name="review" id="review" cols="30" rows="3" placeholder="Any suggestions"></textarea>
+
+            <button id="btn">Submit</button>
+        </form>
+    </div>    
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning</title>
+    <!-- CSS POSITIONS: static(default),absolute,relative,fixed,sticky -->
+    <style>
+        .container{
+            border:3px solid coral;
+            background-color: khaki;
+            height:3500px;
+        }
+
+        .box{
+            border:2px solid red;
+            width:150px;
+            height:150px;
+            margin: 5px;
+            display:inline-block;
+        }
+
+        /* position:static;By default */
+        #box1{
+            position: relative;/* relative to its normal position & will leave a gap to its normal position*/
+            top:34px;
+            left:34px;
+            
+        }
+        #box2{
+            position:absolute;/* relative to parent div */
+            top:34px;
+            left:34px;
+
+        }
+        #box3{
+            position:fixed;/* Fixed to the browser & no matter how much you scroll will stay there{Used in: Chat bots, pop-up ads etc.} */
+            right:20px;
+            bottom:5px;
+            /* text-align:center; */
+        }
+        h3{
+            margin:60px auto;
+        }
+        #box4{
+            position:sticky;/* Gets stuck to a certain position when applied(different than fixed as it can start from a different coord. but as scroll down ends up sticking to a different one){Used in menu bars etc.} */
+            top:20px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">RELATIVE</div>
+        <div class="box" id="box2">ABSOLUTE</div>
+        <div class="box" id="box3">FIXED
+            <h3>🤖CHATBOT🤖</h3>
+            
+        </div>
+        <div class="box" id="box4">STICKY</div>
+    </div>
+</body>
+</html>

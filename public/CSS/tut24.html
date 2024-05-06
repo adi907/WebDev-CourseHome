@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        header{
+            border:2px solid black;
+            margin:auto;
+            width:300px;
+        }
+        img{
+            margin:auto;
+            display: block;/* Converts the image from an inline element to block element */
+            width:34px;
+        }
+        h3{
+            font-family: sans-serif;
+            margin:0px;
+            text-align: center;
+        }
+        .container{
+            margin:30px auto;
+            width:80%;
+            /* display:block; */
+            border:2px solid black;
+    
+        }
+
+        .box{
+            border:4px solid black;
+            background-color: gainsboro;;
+            margin:4px;
+            padding:10px;
+            box-sizing: border-box;
+            width:32.2%;
+            display: inline-block;
+            /* Makes it both Inline & Block where it occupies space of itself only(not whole line) & also has properties of block */
+        }
+        .heading{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+            padding:2px 2px;
+        }
+    </style>
+</head>
+<body>
+    <header class="top">
+        <img src="https://image.similarpng.com/very-thumbnail/2020/07/Popular-social-media-Blogger-logo-on-transparent-PNG.png" alt="blogspot logo.png">
+        <h3>Welcome to Blogspot</h3>
+    </header>
+
+    <div class="container">
+        <div class="box">
+            <h4 class="heading">Heading-A</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto vitae maiores ducimus dicta? Accusamus consequatur cumque dignissimos id assumenda nobis repudiandae numquam atque excepturi neque totam esse iste, laborum vitae libero nostrum ea! Libero numquam officiis sapiente fuga sed minima! Mollitia eveniet rem illum!</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Heading-B</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto vitae maiores ducimus dicta? Accusamus consequatur cumque dignissimos id assumenda nobis repudiandae numquam atque excepturi neque totam esse iste, laborum vitae libero nostrum ea! Libero numquam officiis sapiente fuga sed minima! Mollitia eveniet rem illum!</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Heading-C</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto vitae maiores ducimus dicta? Accusamus consequatur cumque dignissimos id assumenda nobis repudiandae numquam atque excepturi neque totam esse iste, laborum vitae libero nostrum ea! Libero numquam officiis sapiente fuga sed minima! Mollitia eveniet rem illum!</p>
+        </div>
+    </div>
+    
+</body>
+</html>

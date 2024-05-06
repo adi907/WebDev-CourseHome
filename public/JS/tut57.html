@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Events</title>
+</head>
+
+<style>
+    #btn{
+        padding:34px;
+        background-color:burlywood;
+        border:2px solid black;
+        color:white;
+        font-weight: bold;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <h1>Browser Events</h1>
+    
+    <ul>
+        <li>click</li>
+        <li>contextmenu</li>
+        <li>mousehover/mouseout</li>
+        <li>mousedown/mouseup</li>
+        <li>mousemove</li>
+        <li>submit</li>
+        <li>focus</li>
+        <li>DOMContentLoaded</li>
+        <li>transitioned</li>
+
+    </ul>
+    <div class="container">
+        <h1>This is my heading</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime consequuntur iusto repellat nisi inventore corporis praesentium eligendi dolor itaque, voluptatem veniam? Hic, nemo tempore! Omnis voluptatum, adipisci odit repellat totam commodi deleniti aperiam accusamus esse optio ea dicta. Magnam maiores voluptatum, doloremque ipsum sit cum vero modi explicabo mollitia autem enim libero beatae quam fugiat alias, cupiditate asperiores excepturi dolore minima. Repellendus, officiis ducimus obcaecati similique nemo mollitia fuga itaque porro in suscipit ut! Repudiandae repellat amet similique quod rem. Velit laudantium, dolore soluta ea amet numquam, totam, obcaecati tenetur fugiat sint sed. Expedita quisquam nesciunt velit, doloremque hic odit provident assumenda ipsum! Vitae deleniti porro accusantium sed. Nihil corrupti nesciunt hic commodi, beatae libero, tempore soluta possimus nulla nemo quasi maiores mollitia inventore exercitationem rerum dolorum laudantium debitis labore totam. Quia quod sapiente qui enim corrupti perspiciatis vero error minima adipisci obcaecati? Expedita eaque odio soluta velit. Quas necessitatibus quis repudiandae aperiam, aliquid nulla velit soluta aut nemo vel dicta doloribus quibusdam. Iure esse accusantium modi quod eos totam omnis, molestiae dolores reiciendis! Esse vero saepe excepturi corrupti aperiam neque qui doloribus illo, dolores explicabo, ducimus aspernatur cupiditate quibusdam magnam eligendi laboriosam sed ex expedita modi, aut numquam beatae quisquam minima. Quasi, placeat! Laudantium pariatur in facere perspiciatis eos velit tempora sint ratione nostrum dolore eaque magni, esse quisquam voluptatum distinctio dolorem minus. Sint distinctio delectus, eaque in iste praesentium consequuntur corrupti.</p>
+    </div>
+
+    <!-- METHOD I(specify the trigger and function here and explain the function after) -->
+
+    <!-- <button id="btn" onclick="toggle_hide()">Show/Hide</button> -->
+    <!-- just like onclick there are others like mousehover,submit etc. -->
+    
+    <!-- METHOD II(dont specify anything here and explain function and trigger both below) -->
+    <button id="btn">Show/Hide</button>
+
+    <script>
+        let para=document.getElementById('para');
+        let btn=document.getElementById('btn');
+        
+        // JS FOR METHOD I
+        // function toggle_hide(){
+        //     if(para.style.display!='none'){
+        //         para.style.display='none';
+        //     }else{
+        //         para.style.display='block';
+        //     }
+        // }
+
+        // JS FOR METHOD II(EVENT LISTENER)
+        btn.addEventListener('click',function hide(){//Use 'click instead of onclick here'
+            if(para.style.display!='none'){
+                para.style.display='none';
+            }else{
+                para.style.display='block';
+            }
+        });
+
+
+        
+        para.addEventListener('mouseover',
+        function entry(){
+            console.log("Mouse inside the para column");
+        }
+        );
+
+        para.addEventListener('mouseout', exit);//another way of just declaring function first & explaining later
+        function exit(){
+            // alert("Mouse outside the browser");
+            console.log("Mouse outside the para column");
+        };
+        
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops: for, while, forEach, Do While</title>
+</head>
+
+<body>
+    <div class="container">
+        This is about loops
+    </div>
+
+    <script>
+
+        //For loop
+        let i=0;
+        for(i=0;i<3;i++){
+            console.log(i);
+        }
+
+        let friends=["Aditya","Aryan","Divij","Ananmaya"]
+        for (let index = 0; index < friends.length; index++) {
+            let element = friends[index];
+            console.log("Hello friend #"+(index+1)+", "+element);
+        }
+
+        
+        // forEach loop
+        friends.forEach(function f(element){
+            console.log("Hello friend, "+element);
+        });
+
+        // for of loop
+        for(element of friends){
+            console.log("Hello friend, "+ element);
+        }
+
+        // for in loop(Used to iterate over objects{custom made data-types})
+        let student={
+            name:"Aditya",
+            "registration id":209301509,
+            college:'MUJ'
+        }
+        
+        for(key in student){
+            console.log(`The ${key} of employee is ${student[key]}`)
+        }
+        
+        // While loop
+        let j=0;
+        while (j<5) {
+            console.log(`${j} is less than 5`);
+            j++;
+        }
+
+        // do while
+        let k=34;
+        do {
+            console.log(`${k} is less than 5(which might be wrong & runs only once as we are in do while loop)`);
+            k++;
+        } while (k<5);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Tutorial</title>
+</head>
+
+
+<body>
+    
+    <div class="container">
+        This is container
+    </div>
+
+    <script>
+        // JSON= JavaScript Object Notation(format to store & transport data{done via a string format})
+
+        //creating an object
+        let jsonObj={
+            name:"Adi",
+            college:'Muj',
+            branch:'Cse'
+        };
+        console.log(jsonObj);
+        // if we want to transport this Object over network, it can be very complex. So we use JSON -> stringify it -> do whatever changes in the string -> transport it -> parse the string back to Object and can reuse it again
+
+        let jsonStr=JSON.stringify(jsonObj);//stringify-ing the object
+        console.log(jsonStr);
+
+        jsonStr=jsonStr.replace('Muj','Iit Delhi');//doing changes in the string
+
+        jsonObj=JSON.parse(jsonStr);//converting the string back to object
+        console.log(jsonObj);
+
+    </script>
+
+</body>
+</html>

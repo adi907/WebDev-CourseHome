@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeout & setInterval</title>
+</head>
+
+<body>
+
+    <div class="container">
+        This is a container
+    </div>
+
+    <script>
+        function greet(name,title){
+            console.log("Have a great day, "+name+" "+title);
+        }
+        function india(){
+            console.log("Akhand Bharat")
+        }
+
+        // setTimeout -->Alllows us to run the function once after the interval of time (& also returns an id with it;which can be used to cancel the timeout in case of any event(say we want to give a pop for compulsory login after 10sec but user has already logged in, so in that case to cancel the event of login pop-up, we can use the id obtained to cancel)
+        
+        // setTimeout(greet, 5000,'Adi','the Great');//5000ms=5sec
+
+        // alternative way(just to obtain id)
+        let timepass=setTimeout(greet,5000,'Adi','the Great');//timepass stores the id of setTimeout
+        clearTimeout(timepass);
+
+
+
+        // setInterval -->Alllows us to run the function repeatedly after the interval of time(& just like setTimeout, this also returns id which can be stored)
+        
+        // setInterval(india, 2000);
+
+        // alternative way
+        intervalId=setInterval(india,2000);
+        clearInterval(intervalId);
+
+    </script>
+</body>
+</html>

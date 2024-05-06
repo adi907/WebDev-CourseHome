@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+    <style>
+        h1{
+            background-color: red;
+            color:white;
+            font-weight:bold;
+        }
+
+        div p{
+            /* All para's inside a div */
+            background-color: green;
+        }
+        div>p{
+            /* All p's directly inside div(i.e without any li or other tags between hierarchy say div.li.p will not be affected) */
+            color:rgb(12, 207, 207);
+            background-color: bisque;
+            font-weight: bold;
+        }
+
+        div+p{
+            /* All paragraphs who previous sibling is div(say in a div, we have a div & a p continuosly,so div & p are siblings and p comes after div so gets selected ) */
+            font-size:25px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>More on Selectors</h1>
+
+    <div class="container">
+        <div class="row">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, modi!</p>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+</body>
+</html>
