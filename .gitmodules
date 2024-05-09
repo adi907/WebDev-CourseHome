@@ -1,35 +1,35 @@
-# [submodule "Myntra Clone"]
-#     path= public/Minor Projects/Myntra Clone
-#     url= https://github.com/adi907/Myntra_clone
+[submodule "Myntra Clone"]
+    path= public/Minor Projects/Myntra Clone
+    url= https://github.com/adi907/Myntra_clone
 
-# [submodule "Tic_tac_toe"]
-#     path= public/Minor Projects/Tic_tac_toe
-#     url= https://github.com/adi907/tic_tac_toe
+[submodule "Tic_tac_toe"]
+    path= public/Minor Projects/Tic_tac_toe
+    url= https://github.com/adi907/tic_tac_toe
 
-# [submodule "UrbanHaven"]
-#     path= public/Minor Projects/UrbanHaven
-#     url= https://github.com/adi907/UrbanHaven
+[submodule "UrbanHaven"]
+    path= public/Minor Projects/UrbanHaven
+    url= https://github.com/adi907/UrbanHaven
 
-# [submodule "TypingSpeed"]
-#     path= public/Minor Projects/TypingSpeed
-#     url= https://github.com/adi907/Typing-speed-tester
+[submodule "TypingSpeed"]
+    path= public/Minor Projects/TypingSpeed
+    url= https://github.com/adi907/Typing-speed-tester
 
-# [submodule "dance_Website"]
-#     path= public/Minor Projects/dance_Website
-#     url= https://github.com/adi907/Dance-Website
-# [submodule "clock"]
-#     path= public/Minor Projects/clock
-#     url= https://github.com/adi907/Clock
-# [submodule "calculator"]
-#     path= public/Minor Projects/calculator
-#     url= https://github.com/adi907/Calculator
-# [submodule "snake"]
-#     path= public/Minor Projects/snake
-#     url= https://github.com/adi907/Snake-Game
-# [submodule "toDo"]
-#     path= public/Minor Projects/toDo
-#     url= https://github.com/adi907/toDoApp
+[submodule "dance_Website"]
+    path= public/Minor Projects/dance_Website
+    url= https://github.com/adi907/Dance-Website
+[submodule "clock"]
+    path= public/Minor Projects/clock
+    url= https://github.com/adi907/Clock
+[submodule "calculator"]
+    path= public/Minor Projects/calculator
+    url= https://github.com/adi907/Calculator
+[submodule "snake"]
+    path= public/Minor Projects/snake
+    url= https://github.com/adi907/Snake-Game
+[submodule "toDo"]
+    path= public/Minor Projects/toDo
+    url= https://github.com/adi907/toDoApp
 
-# [submodule "weatherApp"]
-#     path= public/Minor Projects/weatherApp
-#     url= https://github.com/adi907/weatherApp
+[submodule "weatherApp"]
+    path= public/Minor Projects/weatherApp
+    url= https://github.com/adi907/weatherApp
